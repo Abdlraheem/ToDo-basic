@@ -59,14 +59,14 @@ resetFunc();
 
 
 const textValidation = ()=>{
-    if(textarea.value === "" && dateInput.value === "" && textInput.value === ""){
+    if(textInput.value === "" ){
         console.log("Faild to insert descriptions");
         Warning.innerText = "Text field shoudn't be empty"
         
     }else{
         console.log("Success");
        Warning.innerText = ""
-        submit.setAttribute("data-bs-dismiss","modal")
+       
     }
 };
 
@@ -78,7 +78,7 @@ const acceptData = ()=>{
     console.log(data);
     creatTasks();
     resetFunc();
-    
+     submit.setAttribute("data-bs-dismiss","modal")
     
 }
 
