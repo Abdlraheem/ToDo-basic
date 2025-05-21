@@ -1,0 +1,101 @@
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    background-color: bisque;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    color: white;
+}
+
+.app {
+    border: 2px solid white;
+    border-radius: 9px;
+    padding: 20px 30px;
+    width: 30%;
+    background-color: rgb(255, 116, 3);
+    height: 50%;
+    overflow-y: scroll;
+   
+}
+.app::-webkit-scrollbar {
+    width: 0 !important;
+}
+.app h4 {
+    font-size: 20px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+#addNew {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    margin: 9px 0px;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius:  4px;
+    background-color: rgba(255, 255, 255, 0.61);
+    box-shadow: 0 1px 17px rgba(234, 255, 9, 0.209);
+    cursor: pointer; 
+    transition: all 0.3s ease;   
+    position: sticky;
+}
+#addNew:hover {
+    transform: scale(1.02);
+}
+i {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+}
+/* h5 {
+    text-align: center;
+} */
+#tasks {
+    display: grid;
+    gap: 10px;
+     
+}
+#tasks div {
+    background-color: #ffffff41;
+    border-radius: 5px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.14);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    border: 2px solid rgba(144, 221, 144, 0.233);
+    width: 100%;
+    height: auto;
+    text-wrap: wrap;
+
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    border: 0.19px solid white;
+    border-radius: 8px;
+    padding: 3px;
+}
+.options i {
+    cursor: pointer;
+}
+
+#Warning {
+    font-size: 10px;
+}
